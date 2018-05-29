@@ -1,0 +1,22 @@
+@import "https://netology-code.github.io/html-homeworks/css/resourses/normalize.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+}
+
+.center {
+    width: 1168px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+header {
+    background-image: url(https://image.ibb.co/d5GvDJ/header_backgroudn.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 758px;
+}
