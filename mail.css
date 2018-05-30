@@ -1,5 +1,6 @@
 @import "https://netology-code.github.io/html-homeworks/css/resourses/normalize.css";
 
+/* COMMON */
 * {
     box-sizing: border-box;
 }
@@ -14,9 +15,24 @@ body {
     height: 100%;
 }
 
-header {
-    background-image: url(https://image.ibb.co/d5GvDJ/header_backgroudn.jpg);
+
+/* HEADER SECTION */
+.header-section {
+    background-image: url(https://image.ibb.co/dKtZ8J/banner.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     height: 758px;
+}
+
+.menu {
+    position: relative;
+    width: 100%;
+}
+
+.navmenu {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    height: 100px;
 }
