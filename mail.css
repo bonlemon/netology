@@ -178,3 +178,12 @@ ul li {
     line-height: 22.4px;
     color: #6c7279;
 }
+
+/* WORKS */
+.works {
+    font-size: 0;
+}
+.work {
+    display: inline-block;
+    width: 25%;
+}
