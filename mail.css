@@ -1,4 +1,47 @@
-@import "https://netology-code.github.io/html-homeworks/css/resourses/normalize.css";
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 /* COMMON */
 * {
@@ -6,33 +49,103 @@
 }
 
 body {
+    width: 1920px;
     padding: 0;
 }
-
+ul, li, h1 {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
 .center {
     width: 1168px;
     margin: 0 auto;
     height: 100%;
 }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
 /* HEADER SECTION */
-.header-section {
+.banner {
     background-image: url(https://image.ibb.co/dKtZ8J/banner.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 758px;
+    height: 900px;
 }
 
-.menu {
+.header {
     position: relative;
-    width: 100%;
 }
-
-.navmenu {
-    position: absolute;
+.header__navbar {
+    position: relative;
     top:0;
     left: 0;
     right: 0;
     height: 100px;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.header__logo {
+    padding-top: 35px;
+}
+.header__navigation {
+    float: right;
+}
+.header__navigation li {
+    display: inline-block;
+    padding-top: 40px;
+    padding-left: 40px;
+
+    font-family: "Open Sans", sans-serif;    
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;  
+}
+
+.header__title {
+    height: calc(100% - 100px);
+    padding: 150px 100px 0;
+
+    text-align: center;
+}
+.header__title h1 {
+    color: #fff;
+    font-size: 65px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.header__title p {
+    padding-top: 15px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+
+.header__title button {
+    display: inline-block;
+
+    padding: 15px 40px;
+    border: 0;
+
+    background-color: #e84545;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+
+.features {
+    
 }
