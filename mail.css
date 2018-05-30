@@ -147,5 +147,34 @@ ul li {
 
 
 .features {
+    padding: 50px 0;
+}
+.feature {
+    position: relative;
+
+    display: inline-block;
+    width: 33%;
+    padding: 30px;
+    vertical-align: middle;
+
+    font-size: 0;
+    text-align: center;
+}
+.feature img{
+    padding: 10px 0;
+}
+.feature h5{
+    padding: 10px 0;
     
+    font-size: 14px;
+    color: #2d3033;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.feature p{
+    padding: 10px 0;
+    
+    font-size: 14px;
+    line-height: 22.4px;
+    color: #6c7279;
 }
