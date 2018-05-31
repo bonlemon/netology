@@ -80,104 +80,105 @@ a {
   color: #ffffff;
 }
   
-  .info {
-    font-size: 0;
-    background-color:#27212c;
-  }
+.info {
+  font-size: 0;
+  background-color:#27212c;
+}
   
-  .text {
-    display: inline-block;
-    margin: 0;
-      width: 800px;
-      padding: 93px 75px;
-      font-size: 30px;
-    font-weight: normal;
-    color: #9787a6;
-  }
+.text {
+  display: inline-block;
+  margin: 0;
+  width: 800px;
+  padding: 93px 75px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #9787a6;
+}
   
-  .navigacia {
+.navigacia {
+  width: 224px;
+  padding: 93px 60px;
+  font-size: 30px;
+  display: inline-block;  
+  color: #ffffff;
+  text-align: center;
+  background-color: #bc3183;
+}
   
-    width: 224px;
-    padding: 93px 60px;
-    font-size: 30px;
-    display: inline-block;  
-    color: #ffffff;
-    text-align: center;
-    background-color: #bc3183;
-  }
+.gallery {
+  font-size: 0;
+  overflow: hidden;
+}
   
-  .gallery {
-    font-size: 0;
-    overflow: hidden;
-  }
+.strelka {
+  display: inline-block;
+  float: left;
+  width: 33.3333%;
+  height: 297px;
+  line-height: 297px;
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #5b0fa1;
+}
   
-    .strelka {
-      display: inline-block;
-    float: left;
-    width: 33.3333%;
-    height: 297px;
-      line-height: 297px;
-      font-size: 36px;
-      color: #ffffff;
-    text-align: center;
-    background-color: #5b0fa1;
-  }
+.pic {
+  display: inline-block;
+  float: left;
+  width: 33.3333%;
+  height: 297px;
+  line-height: 297px;
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #5b0fa1;
+}
   
-    .pic {
-      display: inline-block;
-      float: left;
-    width: 33.3333%;
-    height: 297px;
-      line-height: 297px;
-      font-size: 36px;
-      color: #ffffff;
-    text-align: center;
-    background-color: #5b0fa1;
-  }
+.pic img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  padding: 75px;
+  font-size: 0;
+}
   
-  .pic img {
-    width: 100%;
-    height: auto;
-  }
+.content-title {
+  font-size: 30px;
+  font-weight: normal;
+  color: #088ca5;
+}
   
-  .content {
-    padding: 75px;
-    font-size: 0;
-  }
+.text1 {
+  display: inline-block;
+  width: 46%;
+  vertical-align: top;
+  font-size: 14px;
+}
+.text2 {    
+  display: inline-block;
+  width: 46%;
+  margin-left: 8%;
+  vertical-align: top;
+  font-size: 14px;
+}
   
-  .content-title {
-    font-size: 30px;
-    font-weight: normal;
-    color: #088ca5;
-  }
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #27212c;
+}
   
-    .text1 {
-      
-      vertical-align: top;
-          display: inline-block;
-      width: 46%;
-        font-size: 14px;
-    }
-  .text2 {    
-      vertical-align: top;
-          display: inline-block;
-      width: 46%;
-        font-size: 14px;
-        margin-left: 8%;
-    }
-  
-  .footer {
-    padding: 20px 0;
-      text-align: center;
-    background-color: #27212c;
-  }
-  
-  .copyright { color: #ffffff;}
-  .clearfix::after {
-    display: block;
-      content: "";
-    clear: both;
-  }
+.copyright {
+  color: #ffffff;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
 
 
   /*
@@ -208,4 +209,31 @@ a {
     
     .info - разнести каждое правило на новую строку, включая закрывающую скобку + убрал по 2 отступа
     
+    .text - убрал по 2 и 4 отступа(width padding font-size)
+
+    .navigacia - убрал пустую строку и по 2 пробела
+
+    .gallery - убрал по 2 пробела
+
+    strelka - убрал по 4 и 2(float, width, height, text-align, background-color) пробела
+
+    .pic - убрал по 4 и 6(float, display, line-height, font-size, color) пробелов
+
+    .pic img - убрал по 2 пробела
+    .content - убрал по 2 пробела
+    .content-title - убрал по 2 пробела
+
+    .text1 - убрал пустую строку, и удалил по 4(text1, '}', vertical-align, width) и 6(font-size)/8(display) пробелов
+    поднял display и width выше
+
+    .text2 - убрал 2 пробела, 4 для vertical-align, width и }, 6 для font-size, margin-left, margin-left и 8 у display 
+    display, width, margin-left
+
+    .footer - убрал 2 пробела и 4 для text-align
+    
+    .copyright - убрал 2 пробела, color на новую строку, } на новую строку
+
+    добавил строку между copyright и clearfix
+
+    .clearfix - убрал 2 пробела и 4 для content
  */
