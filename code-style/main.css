@@ -1,89 +1,89 @@
 * {
     box-sizing: border-box;
-  }
+}
   
-  body {
-    margin: 0;
-    font: 14px Montserrat, sans-serif;
-    color: #515151;
-    background-color: #ebebeb;
-  }
+body {
+  margin: 0;
+  font: 14px Montserrat, sans-serif;
+  color: #515151;
+  background-color: #ebebeb;
+}
   
-  p {  line-height: 26px;
-    font: 14px Montserrat, sans-serif;
-  }
+p {
+  line-height: 26px;
+  font: 14px Montserrat, sans-serif;
+}
   
-  a {
-    text-decoration: none;
-    outline: none;
-  }
+a {
+  text-decoration: none;
+  outline: none;
+}
   
-  .wrapper {
-        width: 1024px;
-        margin: 0 auto;
-      }
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
   
-  .shapka {
-    background-color: #373c3f;
-  }
+.shapka {
+  background-color: #373c3f;
+}
   
-  .menu {
-    margin: 0;
-    padding: 35px 45px 0 45px;
-    list-style-type: none;
-  }
+.menu {
+  margin: 0;
+  padding: 35px 45px 0 45px;
+  list-style-type: none;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0 30px 35px 0;
+  vertical-align: center;
+}
   
-  .menu li {
-    display: inline-block;
-    padding: 0 30px 35px 0;
-    vertical-align: center;
-  }
+.menu li a {
+  font: 14px Montserrat, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
   
-        .menu li a {
-          font: 14px Montserrat, sans-serif;
-          font-size: 15px;
-          color: #ffffff;
-          text-transform: uppercase;
-        }
+.menu li a:hover {
+  color: #15b0c3;
+}
+.banner {
+  padding: 130px 75px;
+  background-color: #15b0c3;
+}
+.zagolovok {
+  margin: 0;
+  font: 60px Montserrat, sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+}
   
+.link {
+  padding-top: 30px;
+  font-size: 0;
+}
   
+.link-text {
+  display: inline-block;
+  width: 82%;
+  font: 40px Montserrat, sans-serif;
+  color: rgba(255, 255, 255, .6);
+}
   
-  
-  
-  .menu li a:hover {
-    color: #15b0c3;
-  }
-  .banner {
-    padding: 130px 75px;
-    background-color: #15b0c3;
-  }
-  .zagolovok {
-    margin: 0;
-        font: 60px Montserrat, sans-serif;
-    font-weight: normal;
-    color: #ffffff;
-  }
-  
-  .link {
-    padding-top: 30px;
-    font-size: 0;
-  }
-  
-  .link_text {  display: inline-block;
-    width: 82%;
-    font: 40px Montserrat, sans-serif;
-        color: rgba(255, 255, 255, .6);
-  }
-  
-  .linkNav {
-    display: inline-block;
-        width: 18%;
-    font-size: 42px;
-    color: #ffffff;
-  }
+.linkNav {
+  display: inline-block;
+  width: 18%;
+  font-size: 42px;
+  color: #ffffff;
+}
   
   .info {
-    font-size: 0;  background-color: #27212c;}
+    font-size: 0;
+    background-color:#27212c;
+  }
   
   .text {
     display: inline-block;
@@ -181,30 +181,31 @@
 
 
   /*
-    Нужно исправить:
-    3. - убрать отступ до }
-    5 - 10 - убрать по 2 пробела
+    Исправить:
+    3. - убрал отступ до }
+    5 - 10 - убрал по 2 пробела
     12. - "line-height: 26px;" на новую строку
-    12 - 14 - убрать по 2 пробела
-    16 - 19 - убрать по 2 пробела
-    21 - убрать 2 пробела
+    12 - 15 - убрал по 2 пробела
+    17 - 20 - убрать по 2 пробела
+    22 - убрать 2 пробела
     22 - 24 - убрать по 6 пробелов
-    26 - 28 - убрать по 2 пробела
-    30 - 34 - убрать по 2 отступа
-    36 - 40 - убрать по 2 отступа
-    42 - 47 - убрать по 8 отступов
-    49 - 52 - убрать
-    53 - 59 - убрать по 2 отступа
-    60 - 65 - убрать по 2 отступа, на на 62 убрать 6 пробелов
-    67 - 70 - убрать по 2 отступа
-    72 - display: inline-block; на новую строку
-    72 - link_text -> link-text
-    75 - убрать 6 пробелов
-    72 - 76 - убрать по 2 отступа
-    78 - 83 - убрать по 2 отступа
-    78 - linkNav -> link-nav
-    80 - убрать 6 пробелов
-    85 - 86 - разнести каждое правило на новую строку, включая закрывающую скобку
-    88 - 96 - убрать по 2 отступа, но 91-93 убрать 4 пробела
+    shapka - убрал по 2 пробела
+    menu - убрал по 2 отступа
+    menu li - убрал по 2 отступа
+    menu li a - убрал по 8 отступов
+    49 - 52 - убрал
+    .menu li a:hover - убрал по 2 отступа
+    .banner - убрал по 2 отступа
+    .zagolovok - убрал по 2 отступа, на на 62 убрать 6 пробелов
+    .link - убрать по 2 отступа
+
+    .link_text - display: inline-block; на новую строку
+    + убрал 6 пробелов
+    + .link_text -> .link-text
+
+    linkNav -> link-nav
+    .linkNav - убрал по 2 отступа
+    
+    .info - разнести каждое правило на новую строку, включая закрывающую скобку + убрал по 2 отступа
     
  */
