@@ -1,0 +1,144 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* COMMON */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.header {
+    height: 100px;
+}
+
+
+.banner {
+    height: 400px;
+    background: rgb(26, 170, 229);
+}
+
+
+.spead-hosting {
+    height: 400px;
+    background: #fff;
+}
+
+
+.convenient-operation {
+    height: 300px;
+    border-top: dotted 1px #ccc;
+}
+
+
+.start {
+    height: 300px;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid rgba(144, 144, 144, 0.25);
+    border-top: 1px solid rgba(144, 144, 144, 0.25);
+}
+
+
+.order-server {
+    padding: 6rem 0;
+    text-align: center;
+}
+.order-server__title {
+    margin-bottom: 1.5rem;
+
+    font-size: 2.9rem;
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 700;
+}
+.order-server__questions {
+    margin-bottom: 2.9rem;
+
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #858585;
+}
+.order-server__answers {
+    margin-bottom: 2.9rem;
+    
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: rgb(68, 68, 68);
+}
+.order-server__buy {
+    display: inline-block;
+    padding: 1.1rem 2.1rem;
+
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    font-weight: 700;
+    
+    cursor: pointer;
+    background: #7abd22;
+    border-radius: 3.2rem;
+}
+.order-server__buy:hover {
+    background: #86c425;
+}
+
+
+.footer-top {
+    height: 125px;
+    background: #333;
+}
+.footer-bottom {
+    height: 100px;
+    background: #222;
+}
