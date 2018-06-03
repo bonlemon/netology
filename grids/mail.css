@@ -49,9 +49,7 @@ table {
 }
 
 body {
-    width: 1920px;
     padding: 0;
-
     font-family: "Open Sans", sans-serif;
 }
 ul, li, h1 {
@@ -62,9 +60,10 @@ ul li {
     list-style: none;
 }
 .center {
-    width: 1168px;
+    position: relative;
+    
+    max-width: 1168px;
     margin: 0 auto;
-    height: 100%;
 }
 .clearfix::after {
     content: "";
@@ -74,34 +73,33 @@ ul li {
 
 
 /* HEADER SECTION */
-.banner {
+.header {
     background-image: url(https://image.ibb.co/dKtZ8J/banner.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     height: 900px;
 }
 
-.header {
-    position: relative;
-}
 .header__navbar {
-    position: relative;
+    position: fixed;
     top:0;
     left: 0;
     right: 0;
-    height: 100px;
-    vertical-align: middle;
+    background-color: rgba(41,44,71, 0.5);
+}
+.header__navbar-content {
+    padding: 2rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 .header__logo {
-    padding-top: 35px;
+    /* padding-top: 35px; */
 }
 .header__navigation {
     float: right;
 }
 .header__navigation li {
     display: inline-block;
-    padding-top: 40px;
+    /* padding-top: 40px; */
     padding-left: 40px;
 
     font-family: "Open Sans", sans-serif;    
@@ -158,7 +156,7 @@ ul li {
     display: inline-block;
     width: 33%;
     padding: 30px;
-    vertical-align: middle;
+    vertical-align: top;
 
     font-size: 0;
     text-align: center;
