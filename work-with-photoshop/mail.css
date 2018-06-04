@@ -121,8 +121,10 @@ ul li {
     border: 1px solid #fff;
 }
 .work img{
-    width: 100%;
+    /* height: 350px; */
+    min-width: 480px;
 }
+
 .work__project-name {
     position: absolute;
     top: 0;
@@ -130,7 +132,14 @@ ul li {
     right: 0;
     left: 0;
 
+}
+.work__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
     text-align: center;
+    transform: translate(-50%, -50%);
 }
 .work__project-name:hover {
     cursor: pointer;
@@ -138,17 +147,17 @@ ul li {
     background: rgba(232, 69, 69, 0.9);
 }
 .work__project-name h5 {
-    margin-top: 80px;
     color: #fff;
-    font-size: 22px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
+    font-size: 1.4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
 }
 .work__project-name p {
     padding-top: 5px;
     color: #fff;
-    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.5;
 }
