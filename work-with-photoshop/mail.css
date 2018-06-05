@@ -77,14 +77,14 @@ ul li {
 /* FEATURES */
 
 .features {
-    padding: 50px 0;
+    padding: 90px 0;
 }
 .feature {
     position: relative;
 
     display: inline-block;
     width: 33%;
-    padding: 30px;
+    padding: 30px 40px;
     vertical-align: top;
 
     font-size: 0;
@@ -121,8 +121,8 @@ ul li {
     border: 1px solid #fff;
 }
 .work img{
-    /* height: 350px; */
-    min-width: 480px;
+    min-height: 350px;
+    width: 100%;
 }
 
 .work__project-name {
