@@ -54,7 +54,7 @@ a {
   padding: 130px 75px;
   background-color: #15b0c3;
 }
-.zagolovok {
+.caption {
   margin: 0;
   font: 60px Montserrat, sans-serif;
   font-weight: normal;
@@ -95,7 +95,7 @@ a {
   color: #9787a6;
 }
   
-.navigacia {
+.navigation {
   width: 224px;
   padding: 93px 60px;
   font-size: 30px;
@@ -109,8 +109,8 @@ a {
   font-size: 0;
   overflow: hidden;
 }
-  
-.strelka {
+
+.arrow {
   display: inline-block;
   float: left;
   width: 33.3333%;
@@ -239,6 +239,8 @@ a {
  */
 
  /* 
- .shapka -> .header
- 
+  .shapka -> .header
+  .zagolovok -> .caption
+  .navigacia -> .navigation
+  .strelka -> .arrow
  */
