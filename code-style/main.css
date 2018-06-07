@@ -24,7 +24,7 @@ a {
   margin: 0 auto;
 }
   
-.shapka {
+.header {
   background-color: #373c3f;
 }
   
@@ -236,4 +236,9 @@ a {
     добавил строку между copyright и clearfix
 
     .clearfix - убрал 2 пробела и 4 для content
+ */
+
+ /* 
+ .shapka -> .header
+ 
  */
