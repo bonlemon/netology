@@ -1,0 +1,172 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+ 
+/* COMMON */
+* {
+    box-sizing: border-box;
+}
+ul, li, h1 {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+.center {
+    position: relative;
+    
+    max-width: 1168px;
+    margin: 0 auto;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* FEATURES */
+.features {
+    padding: 90px 0;
+}
+.feature {
+    position: relative;
+
+    display: inline-block;
+    width: 33%;
+    padding: 30px 45px;
+    vertical-align: top;
+
+    font-size: 0;
+    text-align: center;
+}
+.feature img {
+    padding: 0 0 10px;
+}
+.feature h5 {
+    padding: 15px 0;
+    
+    font-family: 'Raleway', sans-serif;
+ 
+    font-size: 14px;
+    color: #2d3033;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.feature p {
+    padding: 10px 0;
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 22.4px;
+    color: #6c7279;
+}
+
+/* WORKS */
+.works {
+    font-size: 0;
+    overflow: hidden;
+}
+.work {
+    position: relative;
+
+    display: inline-block;
+    width: 25%;
+    height: 350px;
+    max-width: 485px;
+    border: 1px solid #fff;
+}
+.work img{
+  min-height:100%;
+  min-width:100%;
+  display:block;
+}
+
+.work__project-name {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+.work__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.work__project-name:hover {
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;  
+    background: rgba(232, 69, 69, 0.9);
+}
+.work__project-name h5 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.work__project-name p {
+    padding-top: 5px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    /* font-weight: 300; */
+    line-height: 1.5;
+}
+.work__project-name p,
+.work__project-name h5 {
+    display: none;
+}
+.work__project-name:hover p,
+.work__project-name:hover h5 {
+    display: block;
+}
