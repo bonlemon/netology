@@ -84,6 +84,9 @@ ul li {
     font-size: 0;
     text-align: center;
 }
+.feature__img {
+    background-image: url(https://image.ibb.co/gjXvQJ/sprite.pngs)
+}
 .feature img {
     padding: 0 0 10px;
 }
