@@ -70,8 +70,35 @@ body {
     background-color: #eceef4;
 }
 
-.header-top__bottons {
+.header-top__buttons {
     padding: 15px 0;
+}
+
+
+.header-top-button {
+    float: left;
+    margin-right: 5px;
+    background-color: #fff;
+}
+
+.header-top-button__img {
+    background-image: url(https://ibb.co/cCx70J);
+    background-repeat: no-repeat;
+}
+.header-top-button__img--blog {
+    background-position: 2px 2px;
+}
+.header-top-button__img--jobs {
+    background-position: 2px 2px;
+}
+.header-top-button__img--support {
+    background-position: 2px 2px;
+}
+.header-top-button__img--arabic {
+    background-position: 2px 2px;
+}
+.header-top-button__title {
+
 }
 
 
