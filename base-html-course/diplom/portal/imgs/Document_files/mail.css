@@ -79,6 +79,7 @@ body {
 
 .header-top-button {
     display: inline-block;
+    /* float: left; */
     padding: 5px;
     margin-right: 5px;
     border-radius: 4px;
@@ -86,36 +87,24 @@ body {
 }
 
 .header-top-button__img {
-    display: inline-block;
-    width: 23px;
-    height: 25px;
-
-    vertical-align: middle;
-
     background-image: url(https://image.ibb.co/mSVS0J/top_level_icons.png);
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 .header-top-button__img--blog {
-    background-position: 2px 0px;
+    background-position: 2px 2px;
 }
 .header-top-button__img--jobs {
-    background-position: -20px 0px;
+    background-position: 2px 2px;
 }
 .header-top-button__img--support {
-    background-position: -42px 0px;
+    background-position: 2px 2px;
 }
 .header-top-button__img--arabic {
-    background-position: -64px 0px;
+    background-position: 2px 2px;
 }
 .header-top-button__title {
-    display: inline-block;
-    width: 100px;
-    /* padding: 0 20px; */
-    text-align: center;
-    font-size: 13px;
-    line-height: 27px;
-    font-weight: bold;
-    vertical-align: middle;
+
 }
 
 
