@@ -43,14 +43,17 @@ table {
 	border-spacing: 0;
 }
 
+
+
 /* COMMON */
+
 * {
     box-sizing: border-box;
 }
 body {
     padding: 0;
-    color: #6d6e71;
     font-family: "Open Sans", sans-serif;
+    color: #6d6e71;
 }
 .center {
     position: relative;
@@ -65,26 +68,27 @@ body {
 }
   
 
+
 /* HEADER SECTION */
 
 .header-top {
     background-color: #eceef4;
 }
 
+/* left */
 .header-top__buttons {
-    /* display: inline-block; */
     float: left;
-    padding: 15px 0;
+    padding: 12px 0;
+    font-size: 0;
 }
-
 .header-top-button {
     display: inline-block;
+    width: 100px;
     padding: 5px;
     margin-right: 5px;
     border-radius: 4px;
     background-color: #fff;
 }
-
 .header-top-button__img {
     display: inline-block;
     width: 23px;
@@ -109,8 +113,7 @@ body {
 }
 .header-top-button__title {
     display: inline-block;
-    width: 100px;
-    /* padding: 0 20px; */
+    width: calc(100% - 23px);
     text-align: center;
     font-size: 13px;
     line-height: 27px;
@@ -118,32 +121,45 @@ body {
     vertical-align: middle;
 }
 
-
-.header-top__social {
+/* right */
+.header-top__socials {
     float: right;
+    font-size: 0;
 }
 .header-top-social {
     display: inline-block;
     padding: 20px;
+    border-left: 1px solid #dee0e6;
+}
+.header-top-social:last-child {
+    border-right: 1px solid #dee0e6;
 }
 .header-top-social__img {
-    width: 24px;
-    height: 21px;
+    width: 22px;
+    height: 22px;
 
     background-image: url(https://image.ibb.co/bQt2Zd/top_header_social.png);
     background-repeat: no-repeat;
 }
 .header-top-social__img--fa {
-    background-position: 2px 0px;
+    background-position: -4px -2px;
 }
 .header-top-social__img--twitter {
-    background-position: 2px 0px;
+    width: 25px;
+    background-position: -33px -2px;
 }
 .header-top-social__img--instagram {
-    background-position: 2px 0px;
+    background-position: -62px -2px;
 }
 .header-top-social__img--google {
-    background-position: 2px 0px;
+    width: 25px;
+    background-position: -89px -2px;
+}
+
+
+
+.header-bottom__contacts {
+
 }
 
 
