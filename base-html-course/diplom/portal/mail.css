@@ -157,6 +157,7 @@ body {
 }
 
 .header-bottom__content {
+    position: relative;
     padding: 60px 0;
 }
 
@@ -180,7 +181,9 @@ body {
 /* HEADER CONTACTS */
 
 .header-bottom__contacts {
-    float: right;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
 }
 .header-bottom-contact {
     display: inline-block;
@@ -214,20 +217,90 @@ body {
     background-position: -36px -2px;
 }
 
+.header-bottom-contact__img:hover{
+    cursor: pointer;
+}
+.header-bottom-contact__img--phone:hover {
+    background-position: -70px -39px;
+}
+.header-bottom-contact__img--location:hover {
+    background-position: -5px -41px;
+}
+.header-bottom-contact__img--mail:hover {
+    background-position: -36px -41px;
+}
+
+.header__navigation-and-search {
+    border-top: 1px solid #eceef4;
+
+    line-height: 27px;
+    color: #6d6e71;
+}
+.navigation {
+    float: left;
+    font-size: 0;
+}
+.navigation__link {
+    display: inline-block;
+    padding: 38px 25px;
+    border-right: 1px solid #eceef4;
+    
+    font-size: 13px;
+    font-weight: 700; /* bold */
+}
+.navigation__link:hover {
+    color: #1faae2;
+    cursor: pointer;
+}
+.search {
+    float: right;
+    padding: 38px 0 31px;
+}
+.search__icon {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin-right: 13px;
+
+    background-image: url(https://image.ibb.co/n7YEfJ/icons.png);
+    background-position: -103px -2px;
+
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.search__text {
+    border: none;
+    font-size: 15px;
+    font-weight: 300; /* light */
+    line-height: 27px;
+    vertical-align: top;
+    outline: none;
+}
+
 
 /* BANNER SECTION */
 
 .banner {
+    padding-bottom: 885px;
+    background-image: url(https://image.ibb.co/hRubX8/banner.jpg);
+    background-size: 100%;
 
+    background-repeat: no-repeat;
 }
 
 
 /* CONTENT SECTION */
 
-.content{
-
+.content {
+    padding: 28px 0;
 }
-
+.explain {
+    font-size: 0;
+}
+.explain__item {
+    display: inline-block;
+    width: 50%;
+}
 
 /* PROJECTS SECTION */
 
