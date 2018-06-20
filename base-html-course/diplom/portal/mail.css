@@ -69,7 +69,7 @@ body {
   
 
 
-/* HEADER SECTION */
+/* TOP HEADER SECTION */
 
 .header-top {
     background-color: #eceef4;
@@ -156,10 +156,14 @@ body {
     background-position: -89px -2px;
 }
 
+.header-bottom__content {
+    padding: 60px 0;
+}
+
+/* LOGO */
 
 .header-bottom__logo {
     float: left;
-    padding: 60px 0;
 }
 .header-bottom-logo {
     width: 403px;
@@ -173,38 +177,41 @@ body {
 }
 
 
+/* HEADER CONTACTS */
+
 .header-bottom__contacts {
     float: right;
 }
 .header-bottom-contact {
     display: inline-block;
-    /* padding: 20px; */
-    padding-bottom: 60px;
+    padding: 0 20px;
+}
+.header-bottom-contact:first-child {
     border-right: 1px solid #bcbec3;
 }
 .header-bottom-contact:last-child {
-    border-right: none;
+    border-left: 1px solid #bcbec3;
 }
 .header-bottom-contact__img {
-    width: 22px;
-    height: 22px;
+    width: 27px;
+    height: 30px;
+
+    vertical-align: middle;
 
     background-image: url(https://image.ibb.co/n7YEfJ/icons.png);
     background-repeat: no-repeat;
 }
-.header-bottom-contact__img--fa {
-    background-position: -4px -2px;
+.header-bottom-contact__img--phone {
+    width: 31px;
+    background-position: -70px -2px;
 }
-.header-bottom-contact__img--twitter {
-    width: 25px;
-    background-position: -33px -2px;
+.header-bottom-contact__img--location {
+    height: 36px;
+    background-position: -5px -2px;
 }
-.header-bottom-contact__img--instagram {
-    background-position: -62px -2px;
-}
-.header-bottom-contact__img--google {
-    width: 25px;
-    background-position: -89px -2px;
+.header-bottom-contact__img--mail {
+    width: 31px;
+    background-position: -36px -2px;
 }
 
 
