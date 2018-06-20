@@ -281,7 +281,7 @@ body {
 /* BANNER SECTION */
 
 .banner {
-    padding-bottom: 885px;
+    height: 885px;
     background-image: url(https://image.ibb.co/hRubX8/banner.jpg);
     background-size: 100%;
 
@@ -296,10 +296,42 @@ body {
 }
 .explain {
     font-size: 0;
+    padding-bottom: 96px;
 }
 .explain__item {
     display: inline-block;
     width: 50%;
+    vertical-align: top;
+}
+.explain__img {
+    float: left;
+    width: 115px;
+    height: 115px;
+    background-image: url(https://image.ibb.co/bD9LLJ/content.png);
+    background-position: -15px 0;
+}
+.explain__img--lamp {
+    background-position: -15px 0;
+}
+.explain__img--tree {
+    background-position: -15px 0;
+}
+.explain__content {
+    float: left;
+    width: calc(100% - 115px);
+    padding-left: 30px;
+}
+.explain-content__title {
+    padding-bottom: 30px;
+    font-size: 26px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #6d6e71;
+}
+.explain-content__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #6d6e71;
 }
 
 /* PROJECTS SECTION */
