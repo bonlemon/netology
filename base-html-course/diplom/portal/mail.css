@@ -157,11 +157,55 @@ body {
 }
 
 
-
-.header-bottom__contacts {
-
+.header-bottom__logo {
+    float: left;
+    padding: 60px 0;
+}
+.header-bottom-logo {
+    width: 403px;
+    height: 93px;
+    font-size: 43px;
+    line-height: 93px;
+    text-align: center;
+    vertical-align: middle;
+    color: #3687c4;
+    background-image: url(https://image.ibb.co/gr1d7y/logo.png);
 }
 
+
+.header-bottom__contacts {
+    float: right;
+}
+.header-bottom-contact {
+    display: inline-block;
+    /* padding: 20px; */
+    padding-bottom: 60px;
+    border-right: 1px solid #bcbec3;
+}
+.header-bottom-contact:last-child {
+    border-right: none;
+}
+.header-bottom-contact__img {
+    width: 22px;
+    height: 22px;
+
+    background-image: url(https://image.ibb.co/n7YEfJ/icons.png);
+    background-repeat: no-repeat;
+}
+.header-bottom-contact__img--fa {
+    background-position: -4px -2px;
+}
+.header-bottom-contact__img--twitter {
+    width: 25px;
+    background-position: -33px -2px;
+}
+.header-bottom-contact__img--instagram {
+    background-position: -62px -2px;
+}
+.header-bottom-contact__img--google {
+    width: 25px;
+    background-position: -89px -2px;
+}
 
 
 /* BANNER SECTION */
