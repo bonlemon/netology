@@ -59,6 +59,7 @@ body {
     position: relative;
     
     max-width: 1160px;
+    height: 100%;
     margin: 0 auto;
 }
 .clearfix::after {
@@ -66,7 +67,14 @@ body {
     display: table;
     clear: both;
 }
-  
+.arrow-icon {
+    width: 25px;
+    height: 41px;
+    background-image: url(https://image.ibb.co/n7YEfJ/icons.png);
+    background-position: -103px -36px;
+    background-repeat: no-repeat;
+}
+
 
 
 /* TOP HEADER SECTION */
@@ -88,6 +96,10 @@ body {
     margin-right: 5px;
     border-radius: 4px;
     background-color: #fff;
+    cursor: pointer;
+}
+.header-top-button:hover {
+    box-shadow: 1px 1px 1px 1px #6d6e71;
 }
 .header-top-button__img {
     display: inline-block;
@@ -317,7 +329,7 @@ body {
     font-weight: 300; /* light */
     line-height: 27px;
     vertical-align: top;
-    outline: none;
+    outline-offset: 5px;
 }
 
 
@@ -327,7 +339,7 @@ body {
 .banner {
     height: 885px;
     background-image: url(https://image.ibb.co/hRubX8/banner.jpg);
-    background-size: 100%;
+    background-size: cover;
 
     background-repeat: no-repeat;
 }
@@ -335,7 +347,8 @@ body {
     display: block;
     width: calc(100% - 380px);
     margin: auto;
-    padding: 260px 0 150px;
+    padding-top: 260px;
+    /* padding: 260px 0 150px; */
     color: #fff;
 }
 .banner__text h1 {
@@ -359,14 +372,71 @@ body {
     line-height: 80px;
 }
 .banner__imgs {
+    position: absolute;
+    right: 0;
+    bottom: 124px;
+    text-align: right;
+    font-size: 0;
 }
+
+.banner__img {
+    position: relative;
+    font-size: 0;
+}
+.banner__img:hover .banner-like {
+    display: block;
+    cursor: pointer;
+}
+.banner-like {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+
+    text-align: center;
+
+    opacity: 0.8;
+}
+.banner-like--yellow {
+    background: #feeb75;
+    color: #cc9800;
+}
+.banner-like--green {
+    background: #94cf61;
+    color: #fff;
+}
+.banner-like__img {
+    display: inline-block;
+    width: 32px;
+    height: 29px;
+    vertical-align: middle;
+    background-image: url(https://image.ibb.co/n7YEfJ/icons.png);
+    background-repeat: no-repeat;
+}
+.banner-like__img--white {
+    background-position: -134px -3px;
+}
+.banner-like__img--yellow {
+    background-position: -134px -41px;
+}
+.banner-like__text {
+    padding-left: 10px;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 58px;
+}
+
 .banner__arrow {
     display: inline-block;
-    padding: 100px 45px;
+    padding: 100px 43px;
     background: #f4f4f4;
+    cursor: pointer;
 }
-
-
+.banner__arrow:hover {
+    background: #6d6e71;
+}
 
 
 /* CONTENT SECTION */
@@ -588,6 +658,7 @@ body {
     padding: 16px 0;
     text-align: center;
     border-right: 1px solid #efefef;
+    cursor: pointer;
 }
 .our-project-blocks__link--img {
     display: inline-block;
@@ -608,6 +679,7 @@ body {
     height: 28px;
     background-image: url(https://image.ibb.co/n7YEfJ/icons.png);
     background-position: 31px -41px;
+    cursor: pointer;
 }
 
 
@@ -624,17 +696,14 @@ body {
     border-radius: 50%;
     transform: rotate(-90deg);
 }
+.our-project__up:hover {
+    background-color: #2b2c2d;
+    opacity: 0.8;
+}
 .our-project__up--img {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 30px;
-    height: 50px;
-    
-    background-image: url(https://image.ibb.co/n7YEfJ/icons.png);
-    background-position: -99px -30px;
-    
-    background-repeat: no-repeat;
     
     transform: translate(-50%, -50%);
 }
@@ -715,14 +784,20 @@ body {
     color: #6d6e71;
     border: none;
     background: none;
+    outline-offset: -8px;
 }
 .footer-top-form__submit {
-    padding: 16px 27px;
+    padding: 16px 26px;
     border: none;
     font-weight: 700;
     color: #6d6e71;
     background: #494c4d;
     border-radius: 4px;
+    cursor: pointer;
+}
+.footer-top-form__submit:hover {
+    color: #393b3c;
+    background: #6d6e71;
 }
 
 /* footer bottom */
@@ -738,9 +813,15 @@ body {
 }
 .footer__link {
     display: inline-block;
+    line-height: 27px;
+    cursor: pointer;
+}
+.footer__link:hover {
+    color: #1faae2;
 }
 .footer__link:not(:last-child):after {
     content: "•";
+    color: #6d6e71;
     display: inline-block;
     padding: 0 7px;
 }
