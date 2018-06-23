@@ -198,7 +198,7 @@ body {
 }
 .header-bottom-contact__img {
     width: 27px;
-    height: 30px;
+    height: 36px;
 
     vertical-align: middle;
 
@@ -210,16 +210,11 @@ body {
     background-position: -70px -2px;
 }
 .header-bottom-contact__img--location {
-    height: 36px;
     background-position: -5px -2px;
 }
 .header-bottom-contact__img--mail {
     width: 31px;
     background-position: -36px -2px;
-}
-
-.header-bottom-contact__img:hover{
-    cursor: pointer;
 }
 .header-bottom-contact__img--phone:hover {
     background-position: -70px -39px;
@@ -230,16 +225,23 @@ body {
 .header-bottom-contact__img--mail:hover {
     background-position: -36px -41px;
 }
-
+.header-bottom-contact:hover {
+    cursor: pointer;
+}
+.header-bottom-contact:hover .contact-dropdown {
+    display: block;
+}
 .contact-dropdown {
     position: absolute;
-    top: -120px;
-    left: -50%;
+    display: none;
+    top: -90px;
+    left: -83px;
+    min-width: 230px;
+    font-weight: 300;
     
     border: 2px solid #d4d4d5;
     border-radius: 4px;
-    padding: 25px 30px;
-
+    padding: 25px;
 }
 .contact-dropdown::before {
     content: "";
@@ -319,6 +321,7 @@ body {
 }
 
 
+
 /* BANNER SECTION */
 
 .banner {
@@ -327,6 +330,40 @@ body {
     background-size: 100%;
 
     background-repeat: no-repeat;
+}
+.banner__text {
+    display: block;
+    width: calc(100% - 380px);
+    margin: auto;
+    padding: 260px 0 150px;
+    color: #fff;
+}
+.banner__text h1 {
+    position: relative;
+    top: 51px;
+    font-size: 59px;
+    font-weight: 700;
+    line-height: 81px;
+    z-index: 1;
+}
+.banner__text img {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 0;
+}
+.banner__text h2 {
+    display: inline-block;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 80px;
+}
+.banner__imgs {
+}
+.banner__arrow {
+    display: inline-block;
+    padding: 100px 45px;
+    background: #f4f4f4;
 }
 
 
