@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="header-top">
             <div class="center clearfix">
                 <div class="header-top__buttons clearfix">
@@ -96,15 +96,15 @@
                 </div>
             </div>
         </div>
-        <nav class="header__navigation-and-search clearfix">
-            <div class="center">
+        <nav class="header__navigation-and-search">
+            <div class="center clearfix">
                 <ul class="navigation">
-                    <li class="navigation__link">HOME</li>
-                    <li class="navigation__link">What about ISAMA</li>
-                    <li class="navigation__link">What we do ?</li>
-                    <li class="navigation__link">Our Projects</li>
-                    <li class="navigation__link">Excellent Team</li>
-                    <li class="navigation__link">Contact</li>
+                    <a href="#home" class="navigation__link">HOME</a>
+                    <a href="#isama" class="navigation__link">What about ISAMA</a>
+                    <a href="#we-do" class="navigation__link">What we do ?</a>
+                    <a href="#our-projects" class="navigation__link">Our Projects</a>
+                    <a href="#" class="navigation__link">Excellent Team</a>
+                    <a href="#contact" class="navigation__link">Contact</a>
                 </ul>
                 <form class="search">
                     <span class="search__icon"></span>
@@ -147,7 +147,7 @@
                 <div class="explain__item clearfix">
                     <div class="explain__img explain__img--lamp"></div>
                     <div class="explain__content">
-                        <h3 class="explain-content__title">
+                        <h3 id="isama" class="explain-content__title">
                             What about ISAMA
                         </h3>
                         <p class="explain-content__text">
@@ -175,7 +175,7 @@
                 </div>
             </div>
             <img src="https://image.ibb.co/eRjMzo/devide.jpg" alt="devide">
-            <div class="what-we-do">
+            <div id="we-do" class="what-we-do">
                 <div class="center clearfix">
                     <div class="what-we-do__question">
                         <div class="explain__item explain__item--target clearfix">
@@ -266,7 +266,7 @@
             </div>
         </div>
     </section>
-    <section class="our-project">
+    <section id="our-projects" class="our-project">
         <div class="center">
             <div class="our-project-head clearfix">
                 <div class="our-project-head__img"></div>
@@ -365,12 +365,12 @@
                 </div>
             </div>
             <span class="our-project__up">
-                <span class="our-project__up--img arrow-icon"></span>
+                <a href="#home" class="our-project__up--img arrow-icon"></a>
             </span>
         </div>
 
     </section>
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="center">
             <div class="footer__top clearfix">
                 <div class="footer-top-social-block">

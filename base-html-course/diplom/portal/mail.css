@@ -51,6 +51,8 @@ table {
     box-sizing: border-box;
 }
 body {
+    max-width: 2000px;
+    margin: auto;
     padding: 0;
     font-family: "Open Sans", sans-serif;
     color: #6d6e71;
@@ -309,8 +311,10 @@ body {
     padding: 38px 25px;
     border-right: 1px solid #eceef4;
     
+    color: #6d6e71;
     font-size: 13px;
     font-weight: 700; /* bold */
+    text-decoration: none;
 }
 .navigation__link:hover {
     color: #1faae2;
@@ -799,6 +803,7 @@ body {
     outline-offset: -8px;
 }
 .footer-top-form__submit {
+    width: 75px;
     padding: 16px 26px;
     border: none;
     font-weight: 700;
