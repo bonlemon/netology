@@ -834,6 +834,9 @@ body {
 }
 .footer__link {
     display: inline-block;
+    color: #6d6e71;
+    text-decoration: none;
+    
     line-height: 27px;
     cursor: pointer;
 }
